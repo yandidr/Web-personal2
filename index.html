@@ -1,0 +1,273 @@
+<html>
+     <head> 
+        <title> Membuat Toolbar </title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <style>
+                .tabelputih tr, td {
+                        color: white;
+                }
+                .putih {
+                        color:white;
+                        text-align: justify;
+                }
+
+                .putih2 {
+                        color:white;
+                      
+                }
+
+                .bg {
+                        background-color: rgb(239, 205, 160);
+                }
+                .tbk {
+                        font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+                        color: rgb(255, 232, 179);
+                }
+                .masuk {
+                        font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: burlywood;
+
+                }
+
+                .footer-header {
+                        font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: rgb(141, 141, 141);
+
+                }
+
+                .header {
+                        font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: rgb(141, 141, 141);
+
+                }
+
+                .logo {
+                        width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+                }
+
+                .corner {
+                        width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+                }
+
+                .corner2 {
+                        width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5%;
+                }
+                
+        </style>
+    </head>
+    <body>
+
+        <!--Halaman Masuk-->
+        <div data-role="page" id="mulai" class="bg">
+                <!--Isi konten-->
+                <div data-role="main" class="ui-content">
+                        <center>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <img src="logo.jpg" class="logo" width="200px">
+                        <p class="tbk">Toko Buku Pintar</p>
+                        <a href="#home" data-role="button" data-theme="a" data-transition="fade"><div class="masuk">Mulai</div></a>
+                        </center>
+                </div>
+                
+                <footer data-role="footer" data-position="fixed">
+                <h3 class="footer-header">Program by Yandi</h3>
+                </footer>
+                </div>
+       
+    <!--Halaman Home-->
+    <div data-role="page" id="home" class="bg">
+    <header data-role="header" data-position="fixed">
+    <h1 class="header">Toko Buku Pintar</h1>
+
+    <div data-role="navbar">
+    <ul> 
+    <li><a href="#" data-role="button" data-theme="b" data-icon="home"></a></li><!--Home-->
+    <li><a href="#" data-role="button" data-theme="b" data-icon="back"></a></li><!--Back-->
+    <li><a href="#manfaatbaca" data-role="button" data-theme="b" data-transition="slide" data-icon="forward"></a></li><!--forward-->
+    <li><a href="#identitas" data-role="button" data-theme="b" data-transition="flip" data-icon="user"></a></li><!--Identitas-->
+    <li><a href="#mulai" data-role="button" data-theme="b" data-transition="pop" data-icon="power"></a></li><!--Out-->
+    </ul>
+    </div>
+    </header>
+    
+    <!--Isi konten-->
+    <div data-role="main" class="ui-content">
+        <center>    
+        <h3 class="putih2">Toko Buku Pintar</h3>
+      <img src="profiltoko.jpg" class="corner">
+      <p class="putih"; text-align="left">
+        Toko Buku Pintar adalah sebuah toko buku modern yang menghadirkan konsep perpaduan antara buku konvensional dan teknologi digital terkini. Kami berkomitmen untuk menjadi pusat literasi yang tidak hanya menyediakan buku-buku berkualitas, tetapi juga memberikan pengalaman belajar yang interaktif dan menyenangkan bagi semua kalangan.
+      </p>
+      </center>
+    </div>
+    
+    <footer data-role="footer" data-position="fixed">
+    <h2 class="footer-header">Program by Yandi</h2>
+    </footer>
+    </div>
+
+    <!--Halaman Manfaat Membaca-->
+    <div data-role="page" id="manfaatbaca" class="bg">
+        <header data-role="header" data-position="fixed">
+        <h1 class="header">Toko Buku Pintar</h1>
+    
+        <div data-role="navbar">
+        <ul> 
+        <li><a href="#home" data-role="button" data-theme="b" data-icon="home"></a></li><!--Home-->
+        <li><a href="#home" data-role="button" data-theme="b" data-transition="slide" data-icon="back"></a></li><!--Back-->
+        <li><a href="#daftarpenulis" data-role="button" data-theme="b" data-transition="slide" data-icon="forward"></a></li><!--forward-->
+        <li><a href="#identitas" data-role="button" data-theme="b" data-transition="flip" data-icon="user"></a></li><!--Identitas-->
+        <li><a href="#mulai" data-role="button" data-theme="b" data-transition="pop" data-icon="power"></a></li><!--Out-->
+        </ul>
+        </div>
+        </header>
+        
+        <!--Isi konten-->
+        <div data-role="main" class="ui-content">
+            <center>    
+            <h3 class="putih2">Manfaat Membaca  Buku</h3>
+          <img src="bacabuku.jfif" class="corner">
+          <p class="putih"; text-align="left">
+            Toko Buku Pintar adalah sebuah toko buku modern yang menghadirkan konsep perpaduan antara buku konvensional dan teknologi digital terkini. Kami berkomitmen untuk menjadi pusat literasi yang tidak hanya menyediakan buku-buku berkualitas, tetapi juga memberikan pengalaman belajar yang interaktif dan menyenangkan bagi semua kalangan.
+            Buku juga dapat meningkatkan daya imajinasi kita dan dapat bertindak sebagai gerbang yang membuka pintu ke dunia mimpi, jauh dari kenyataan pahit kehidupan nyata.
+          </p>
+          <a href="#home" data-role="button" data-theme="a" data-transition="fade"><div class="masuk">Home</div></a>
+          </center>
+        </div>
+        
+        <footer data-role="footer" data-position="fixed">
+        <h2 class="footer-header">Program by Yandi</h2>
+        </footer>
+        </div>
+
+        <!--Halaman Daftar Penulis-->
+    <div data-role="page" id="daftarpenulis" class="bg">
+        <header data-role="header" data-position="fixed">
+        <h1 class="header">Toko Buku Pintar</h1>
+    
+        <div data-role="navbar">
+        <ul> 
+        <li><a href="#" data-role="button" data-theme="b" data-icon="home"></a></li><!--Home-->
+        <li><a href="#manfaatbaca" data-role="button" data-theme="b" data-transition="slide" data-icon="back"></a></li><!--Back-->
+        <li><a href="#" data-role="button" data-theme="b" data-icon="forward"></a></li><!--forward-->
+        <li><a href="#identitas" data-role="button" data-theme="b" data-transition="flip" data-icon="user"></a></li><!--Identitas-->
+        <li><a href="#mulai" data-role="button" data-theme="b" data-transition="pop" data-icon="power"></a></li><!--Out-->
+        </ul>
+        </div>
+        </header>
+        
+        <!--Isi konten-->
+        <div data-role="main" class="ui-content">
+            <center>    
+            <h3 class="putih2">Daftar Penulis</h3>
+<table>
+        <tr>
+                <td><img src="an.jpg" class="corner2"><h4>Andrea Hirata</td>
+                <td><img src="eka.jpg" class="corner2"><h4>Eka Kurniawan</td>
+        </tr>
+        <tr>
+                <td><img src="pidi.jpg" class="corner2"><h4>Pidi Baiq</td>
+                <td><img src="tere.png" class="corner2"><h4>Tere Liye</td>
+        </tr>
+</table>          
+          <a href="#home" data-role="button" data-theme="a" data-transition="fade"><div class="masuk">Home</div></a>
+          </center>
+        </div>
+        
+        <footer data-role="footer" data-position="fixed">
+        <h2 class="footer-header">Program by Yandi</h2>
+        </footer>
+        </div>
+
+    <!--Halaman Identitas-->
+    <div data-role="page" id="identitas" class="bg">
+        <header data-role="header" data-position="fixed">
+        <h1 class="header">Toko Buku Pintar</h1>
+    
+        <div data-role="navbar">
+        <ul> 
+        <li><a href="#home" data-role="button" data-theme="b" data-icon="home"></a></li><!--Home-->
+        <li><a href="#daftarpenulis" data-role="button" data-transition="slide"data-transition="slide" data-theme="b" data-icon="back"></a></li><!--Back-->
+        <li><a href="#" data-role="button" data-theme="b" data-icon="forward"></a></li><!--forward-->
+        <li><a href="#" data-role="button" data-theme="b" data-icon="user"></a></li><!--Identitas-->
+        <li><a href="#mulai" data-role="button" data-theme="b" data-transition="pop" data-icon="power"></a></li><!--Out-->
+        </ul>
+        </div>
+        </header>
+        
+        <!--Isi konten-->
+        <div data-role="main" class="ui-content">
+                <center><h3 class="putih2">Yandi David Riyandi</h3></center>
+                <div><center><img src="Yandi.JPG" class="logo"></center></div>
+                <br>
+                <center>
+                    <table border="0">
+                        <tr>
+                            <td>Nama Lengkap</td>
+                            <td>:</td>
+                            <td>Yandi David Riyandi</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Tanggal Lahir</td>
+                            <td>:</td>
+                            <td>Garut,21 Januari 2001</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>:</td>
+                            <td>22573034</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>:</td>
+                            <td>4B-Sistem Informasi</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td>Jl. Warung Peutey</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <a href="#home" data-role="button" data-theme="a" data-transition="fade"><div class="masuk">Home</div></a>
+                    </center>
+        </div>
+        
+        <footer data-role="footer" data-position="fixed">
+        <h2 class="footer-header">Program by Yandi</h2>
+        </footer>
+        </div>
+
+  
+    </body>
+    </html>
+    
